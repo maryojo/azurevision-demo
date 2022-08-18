@@ -41,17 +41,17 @@ function App() {
     )
   };
   
-  //Analyze image
-  const Analyze = () => {
+  //Describe image
+  const Describe = () => {
     return (
     <div>
-      <h1>Analyze image</h1>
+      <h1>Describe image</h1>
       {!processing &&
         <div>
           <div>
             <label>URL</label>
-            <input type="text" placeholder="Enter an image URL" size="50" onChange={handleChange}></input>
-          <button onClick={onFileUrlEntered}>Analyze</button>
+            <input type="text" placeholder="Enter image URL" size="50" onChange={handleChange}></input>
+          <button onClick={onFileUrlEntered}>Describe</button>
           </div>
         </div>
       }
@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div>
-      <Analyze/>
+      <Describe/>
     </div>
     
   );
